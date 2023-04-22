@@ -1,0 +1,15 @@
+﻿  Laba_3.1.cpp
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutInit в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutInitDisplayMode в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutInitWindowPosition в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutInitWindowSize в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutMainLoop в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutCreateWindow в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutPostRedisplay в функции "void __cdecl myIdle(void)" (?myIdle@@YAXXZ).
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutSwapBuffers в функции "void __cdecl myDisplay(void)" (?myDisplay@@YAXXZ).
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutDisplayFunc в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutReshapeFunc в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutIdleFunc в функции main.
+Laba_3.1.obj : error LNK2019: ссылка на неразрешенный внешний символ glutSolidCube в функции "void __cdecl myDisplay(void)" (?myDisplay@@YAXXZ).
+C:\Program Files\Microsoft Visual Studio\2022\Community\huesos\VC\Tools\MSVC\14.34.31933\lib\x64\glut32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+C:\Users\USER\Desktop\кг\Laba_3.1\x64\Debug\Laba_3.1.exe : fatal error LNK1120: неразрешенных внешних элементов: 12
