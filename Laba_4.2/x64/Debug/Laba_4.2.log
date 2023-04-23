@@ -1,4 +1,0 @@
-﻿  Laba_4.2.cpp
-C:\Users\USER\Desktop\кг\Laba_4.2\Laba_4.2.cpp(40,2): error C2660: glutSetColor: функция не принимает 3 аргументов
-C:\Program Files\Microsoft Visual Studio\2022\Community\huesos\VC\Tools\MSVC\14.34.31933\include\glut.h(490,22): message : см. объявление "glutSetColor"
-C:\Users\USER\Desktop\кг\Laba_4.2\Laba_4.2.cpp(40,2): message : при попытке сопоставить список аргументов "(double, double, double)"
