@@ -51,7 +51,7 @@
 //	else glViewport(0, 0, H * R, H);
 //}
 //
-//void axis(void) // рисование осей
+//void axis(void) // СЂРёСЃРѕРІР°РЅРёРµ РѕСЃРµР№
 //{
 //	glColor3f(0.0, 0.0, 0.0);
 //	glBegin(GL_LINES);
@@ -62,7 +62,7 @@
 //	glEnd();
 //}
 //
-//void display(void)	//функция рисования и обновления окна
+//void display(void)	//С„СѓРЅРєС†РёСЏ СЂРёСЃРѕРІР°РЅРёСЏ Рё РѕР±РЅРѕРІР»РµРЅРёСЏ РѕРєРЅР°
 //{
 //	glMatrixMode(GL_MODELVIEW);
 //	glLoadIdentity();

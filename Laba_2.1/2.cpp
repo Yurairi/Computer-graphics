@@ -15,7 +15,7 @@
 //void figure1(void)
 //{
 //	glColor3f(0.0, 1.0, 0.0);
-//	glBegin(GL_QUADS);	// движущийся зеленый квадрат
+//	glBegin(GL_QUADS);	// РґРІРёР¶СѓС‰РёР№СЃСЏ Р·РµР»РµРЅС‹Р№ РєРІР°РґСЂР°С‚
 //	glVertex2f(1, 1);
 //	glVertex2f(-1, 1);
 //	glVertex2f(-1, -1);
@@ -26,7 +26,7 @@
 //void figure2(void)
 //{
 //	glColor3f(1.0, 0.0, 0.0);
-//	glBegin(GL_QUADS);	//неподвижный красный квадрат
+//	glBegin(GL_QUADS);	//РЅРµРїРѕРґРІРёР¶РЅС‹Р№ РєСЂР°СЃРЅС‹Р№ РєРІР°РґСЂР°С‚
 //	glVertex2f(6, 6);
 //	glVertex2f(4, 6);
 //	glVertex2f(4, 4);
@@ -34,7 +34,7 @@
 //	glEnd();
 //}
 //
-//void axis(void) // рисование осей
+//void axis(void) // СЂРёСЃРѕРІР°РЅРёРµ РѕСЃРµР№
 //{
 //	glColor3f(0.0, 0.0, 0.0);
 //	glBegin(GL_LINES);
@@ -45,7 +45,7 @@
 //	glEnd();
 //}
 //
-//void display(void)	//функция рисования и обновления окна
+//void display(void)	//С„СѓРЅРєС†РёСЏ СЂРёСЃРѕРІР°РЅРёСЏ Рё РѕР±РЅРѕРІР»РµРЅРёСЏ РѕРєРЅР°
 //{
 //	glMatrixMode(GL_MODELVIEW);
 //	glLoadIdentity();
@@ -79,7 +79,7 @@
 //	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 //	glutInitWindowSize(500, 500);
 //	glutInitWindowPosition(0, 0);
-//	glutCreateWindow("Преобразования модели");
+//	glutCreateWindow("РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РјРѕРґРµР»Рё");
 //	glutDisplayFunc(display);
 //	glutTimerFunc(500, timer, 0);
 //	init();

@@ -16,24 +16,24 @@ void init(void)
 }
 void myDisplay()
 {
-	glPushMatrix(); //Сохраняем VM = 1
+	glPushMatrix(); //РЎРѕС…СЂР°РЅСЏРµРј VM = 1
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable(GL_DEPTH_TEST);
-	gluLookAt(pos * 5, pos * 3, pos * 0, 0, 0, 0, 0, 1, 0); // VM=Fwe 2.8 поменять первые 3 параматера для изменения координат наблюдателя 
-	GLfloat myLightPosition[] = { 5.0, 5.0, 2.0, 1.0 }; // Источник света в CKw 2.7 изменить координаты для перемещения света 
-	glLightfv(GL_LIGHT0, GL_POSITION, myLightPosition); /*Позиция источ-ника света будет преобразована в CKe*/
+	gluLookAt(pos * 5, pos * 3, pos * 0, 0, 0, 0, 0, 1, 0); // VM=Fwe 2.8 РїРѕРјРµРЅСЏС‚СЊ РїРµСЂРІС‹Рµ 3 РїР°СЂР°РјР°С‚РµСЂР° РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ РєРѕРѕСЂРґРёРЅР°С‚ РЅР°Р±Р»СЋРґР°С‚РµР»СЏ 
+	GLfloat myLightPosition[] = { 5.0, 5.0, 2.0, 1.0 }; // РСЃС‚РѕС‡РЅРёРє СЃРІРµС‚Р° РІ CKw 2.7 РёР·РјРµРЅРёС‚СЊ РєРѕРѕСЂРґРёРЅР°С‚С‹ РґР»СЏ РїРµСЂРµРјРµС‰РµРЅРёСЏ СЃРІРµС‚Р° 
+	glLightfv(GL_LIGHT0, GL_POSITION, myLightPosition); /*РџРѕР·РёС†РёСЏ РёСЃС‚РѕС‡-РЅРёРєР° СЃРІРµС‚Р° Р±СѓРґРµС‚ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅР° РІ CKe*/
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
-	glPushMatrix(); //Сохраняем VM=Fwe 
-	//glRotatef(angle, 1, 0, 0); // VM=Fwe*R 2.4 оставить только эту строку для вращения вокург оси Х
-	glRotatef(-angle, 0, 1, 0); // VM=Fwe*R*R 2.5 оставить только эту строку для вращения вокург оси Y
-	//2.6 добавить - для вращения в обратную сторону
+	glPushMatrix(); //РЎРѕС…СЂР°РЅСЏРµРј VM=Fwe 
+	//glRotatef(angle, 1, 0, 0); // VM=Fwe*R 2.4 РѕСЃС‚Р°РІРёС‚СЊ С‚РѕР»СЊРєРѕ СЌС‚Сѓ СЃС‚СЂРѕРєСѓ РґР»СЏ РІСЂР°С‰РµРЅРёСЏ РІРѕРєСѓСЂРі РѕСЃРё РҐ
+	glRotatef(-angle, 0, 1, 0); // VM=Fwe*R*R 2.5 РѕСЃС‚Р°РІРёС‚СЊ С‚РѕР»СЊРєРѕ СЌС‚Сѓ СЃС‚СЂРѕРєСѓ РґР»СЏ РІСЂР°С‰РµРЅРёСЏ РІРѕРєСѓСЂРі РѕСЃРё Y
+	//2.6 РґРѕР±Р°РІРёС‚СЊ - РґР»СЏ РІСЂР°С‰РµРЅРёСЏ РІ РѕР±СЂР°С‚РЅСѓСЋ СЃС‚РѕСЂРѕРЅСѓ
 	//glRotatef(angle, 0, 0, 1); // VM=Fwe*R*R*R
-	glutSolidCube(0.95 * scale);// 2.1 меняем на следующую строчку для прозрачности
-	//glutSolidSphere(0.5 * scale, 10, 10); // 2.9 заменить куб на сферу
+	glutSolidCube(0.95 * scale);// 2.1 РјРµРЅСЏРµРј РЅР° СЃР»РµРґСѓСЋС‰СѓСЋ СЃС‚СЂРѕС‡РєСѓ РґР»СЏ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
+	//glutSolidSphere(0.5 * scale, 10, 10); // 2.9 Р·Р°РјРµРЅРёС‚СЊ РєСѓР± РЅР° СЃС„РµСЂСѓ
 	//glutWireCube(0.95);
-	glPopMatrix(); // Восстанавливаем VM=Fwe
-	glDisable(GL_LIGHTING); //Выключаем освещение
+	glPopMatrix(); // Р’РѕСЃСЃС‚Р°РЅР°РІР»РёРІР°РµРј VM=Fwe
+	glDisable(GL_LIGHTING); //Р’С‹РєР»СЋС‡Р°РµРј РѕСЃРІРµС‰РµРЅРёРµ
 	glBegin(GL_LINES);
 	glColor3f(1, 0, 0); glVertex3f(0, 0, 0); glVertex3f(1, 0, 0);
 	glColor3f(0, 1, 0); glVertex3f(0, 0, 0); glVertex3f(0, 1, 0);
@@ -43,7 +43,7 @@ void myDisplay()
 	glColor3f(1, 1, 1); glVertex3f(5, 5, 2); glVertex3f(0.0, 0.0, 0.0);
 	glEnd();
 	glPopMatrix();
-	Sleep(50);// 2.3 Добавляем задержку
+	Sleep(50);// 2.3 Р”РѕР±Р°РІР»СЏРµРј Р·Р°РґРµСЂР¶РєСѓ
 	glutSwapBuffers();
 }
 void Mouse(int button, int state, int x, int y)

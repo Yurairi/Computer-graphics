@@ -10,7 +10,7 @@ int count = 0;
 float* X;
 float* Y;
 
-//Функция инициализации
+//Р¤СѓРЅРєС†РёСЏ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё
 void init()
 {
 	glClearColor(1.0, 1.0, 1.0, 0.0);
@@ -18,7 +18,7 @@ void init()
 	glLoadIdentity();
 	gluOrtho2D(-100.0, 100.0, -100.0, 100.0);
 }
-//Функция рисования
+//Р¤СѓРЅРєС†РёСЏ СЂРёСЃРѕРІР°РЅРёСЏ
 void draw()
 {
 	GLfloat X = 0, Y = 0;
@@ -29,14 +29,14 @@ void draw()
 	glVertex2f(0.0, 100.0); glVertex2f(0.0, -100.0);
 	glEnd();
 
-	// Дуга окружности в заданной четверти в указанном направлении (1)
+	// Р”СѓРіР° РѕРєСЂСѓР¶РЅРѕСЃС‚Рё РІ Р·Р°РґР°РЅРЅРѕР№ С‡РµС‚РІРµСЂС‚Рё РІ СѓРєР°Р·Р°РЅРЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё (1)
 	GLfloat R = A;
 	glColor3f(0.0, 1.0, 0.0);
 	glBegin(GL_LINE_STRIP);
 	X = 0;
 	Y = R;
 
-	// 1 способ
+	// 1 СЃРїРѕСЃРѕР±
 	glVertex2f(X, Y);
 	while (X > -A || Y > 0) {
 		if ((pow(X, 2) + pow(Y, 2) - pow(R, 2)) > 0) {
@@ -56,7 +56,7 @@ void draw()
 	}
 	glEnd();
 
-	// 2 способ
+	// 2 СЃРїРѕСЃРѕР±
 	glColor3f(1.0, 0.0, 1.0);
 
 	GLfloat dX, dY;
@@ -85,13 +85,13 @@ void myReshape(int width, int height)
 	}
 }
 
-//Главная функция
+//Р“Р»Р°РІРЅР°СЏ С„СѓРЅРєС†РёСЏ
 int main(int argc, char** argv)
 {
 	setlocale(LC_ALL, "Russian");
-	std::cout << "Введите 1 радиус: \n";
+	std::cout << "Р’РІРµРґРёС‚Рµ 1 СЂР°РґРёСѓСЃ: \n";
 	std::cin >> A;
-	std::cout << "Введите 2 радиус: \n";
+	std::cout << "Р’РІРµРґРёС‚Рµ 2 СЂР°РґРёСѓСЃ: \n";
 	std::cin >> AA;
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
